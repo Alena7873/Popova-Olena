@@ -1,0 +1,423 @@
+:root {
+    --main-color: #333333;
+    --van-color: #5555FF;
+    --color4: #4FBFA5;
+    --color5: white;
+}
+
+.main_container1 {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 20%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color4);
+
+
+}
+
+.main_section1 {
+    width: 100%;
+    height: auto;
+
+}
+
+.main {
+    font-size: 15px;
+}
+
+
+
+/* 2 */
+#navbar ul {
+    display: none;
+}
+
+#navbar li:hover ul {
+    display: flex;
+}
+
+#navbar,
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar ul li {
+    float: none;
+}
+
+#navbar ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#navbar li {
+    float: left;
+    position: relative;
+}
+
+#navbar ul {
+    display: none;
+    justify-content: center;
+    background-color: var(--color4);
+    position: absolute;
+    top: 100%;
+}
+
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #5555FF;
+    min-width: 100%;
+}
+
+
+#navbar li a {
+    display: block;
+    padding: 7px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.item_text {
+    font-size: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-top: 1%;
+
+}
+
+#navbar li:hover {
+    background-color: var(--color4);
+}
+
+#navbar ul li:hover {
+    /* background-color: darkgray; */
+}
+
+/* h1 p  */
+.main-blok {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    left: 4%;
+    top: 20%;
+}
+
+.main_text {
+    font-weight: 700;
+    font-size: 140%;
+    line-height: 100%;
+    color: var(--color5);
+}
+
+
+
+.main_text1 {
+    height: 13px;
+    left: 5%;
+    top: 5%;
+}
+
+.item_text {
+    font-size: 100%;
+    line-height: 120%;
+    color: var(--color5);
+}
+
+
+.item__text1 {
+    height: 84px;
+    left: 5%;
+    top: 6%;
+}
+
+.overflow {
+    width: 90%;
+    height: 80%;
+
+}
+
+/* кнопка */
+
+.btn {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --hue: 223;
+    --bg1: hsl(var(--hue), 10%, 90%);
+    --bg2: hsl(var(--hue), 10%, 80%);
+    --fg1: hsl(var(--hue), 10%, 10%);
+    --fg2: hsl(var(--hue), 10%, 20%);
+    --primary1: hsl(var(--hue), 90%, 55%);
+    --primary2: hsl(var(--hue), 90%, 45%);
+
+}
+
+
+/* Main button styles */
+.btn {
+    background-color: transparent;
+    border-radius: 1.5em;
+    display: block;
+    position: relative;
+    width: 7.5em;
+    height: 3em;
+    transition: width 0.3s ease-in-out;
+}
+
+.btn:not(:disabled):active {
+    transform: translateY(0.1em);
+}
+
+.btn__text {
+    background-color: var(--primary1);
+    border-radius: inherit;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    transition:
+        background-color 0.15s linear,
+        color 0.15s 0.3s ease-in-out;
+    width: 100%;
+}
+
+.btn:not(:disabled):focus .btn__text,
+.btn:not(:disabled):hover .btn__text {
+    background-color: var(--primary2);
+}
+
+.btn__progress {
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3em;
+    height: 3em;
+    visibility: hidden;
+}
+
+.btn__progress-track {
+    r: 12px;
+    stroke: var(--bg2);
+    stroke-width: 24;
+}
+
+.btn__progress-fill {
+    stroke: var(--primary1);
+    stroke-dashoffset: 125.66;
+}
+
+.btn__progress-check {
+    stroke: hsl(0, 0%, 100%);
+    stroke-dashoffset: 34;
+}
+
+/* Both states */
+.btn--running,
+.btn--done {
+    outline: none;
+    pointer-events: none;
+    width: 3em;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.btn--running .btn__text,
+.btn--done .btn__text {
+    color: transparent;
+    transition:
+        background-color 0.3s ease-in-out,
+        visibility 0.3s steps(1);
+}
+
+.btn--running .btn__progress,
+.btn--done .btn__progress {
+    visibility: visible;
+}
+
+/* Running state */
+.btn--running .btn__text {
+    background-color: var(--bg2);
+    visibility: hidden;
+}
+
+.btn--running .btn__progress {
+    transition: visibility 0.3s 0.3s steps(1, start);
+}
+
+.btn--running .btn__progress-track {
+    r: 20px;
+    stroke-width: 8;
+    transition:
+        r 0.3s 0.3s ease-in-out,
+        stroke-width 0.3s 0.3s ease-in-out;
+}
+
+.btn--running .btn__progress-fill {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 2s 0.6s linear;
+}
+
+/* Done state */
+.btn--done .btn__progress-track {
+    stroke: var(--primary1);
+    transition:
+        r 0.3s ease-in-out,
+        stroke-width 0.3s ease-in-out;
+}
+
+.btn--done .btn__progress-check {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.3s 0.3s ease-out;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg1: hsl(var(--hue), 10%, 10%);
+        --bg2: hsl(var(--hue), 10%, 20%);
+        --fg1: hsl(var(--hue), 10%, 90%);
+        --fg2: hsl(var(--hue), 10%, 80%);
+    }
+}
+
+.image-wrapper {
+    float: right;
+    width: 60%;
+    padding: 1%;
+    /* или любое другое значение в процентах */
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 80%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main-blok {
+        position: absolute;
+        width: 42%;
+        height: 5%;
+        left: 1%;
+        top: 20%;
+    }
+
+    .main_text {
+
+        font-size: 6px;
+        line-height: 100%;
+        color: var(--color5);
+        padding-top: 5%;
+    }
+
+    .main_text1 {
+        height: auto;
+        left: 5%;
+        top: 5%;
+    }
+
+    .item_text {
+        font-size: 5px;
+        line-height: 120%;
+        color: var(--color5);
+    }
+
+    .item__text1 {
+        height: 50px;
+        font-size: 6px;
+    }
+
+    .btn {
+        width: 4.75em;
+        height: 1.5em;
+        padding-top: 1%;
+    }
+
+    .btn__text {
+        font-size: 7px;
+        padding: 0.375em 0.75em;
+    }
+}
+
+
+
+.button1 {
+    padding: 2% 3%;
+}
+
+
+.btn__text {
+    padding: -7.25px 1.5px;
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        font-size: 10px;
+
+    }
+
+    #navbar li a {
+        padding: 5px;
+    }
+}
+
+.btn {
+    width: 5.75em;
+    height: 1.5em;
+    padding-top: 1%;
+}
+
+.btn__text {
+    font-size: 8px;
+    padding: 0.375em 0.75em;
+}
+
+@media only screen and (max-width: 1180px) {
+    .btn {
+        width: 12.25em;
+        height: 1.5em;
+        padding-top: 5%;
+    }
+
+    .main_text1 {
+        height: 33px;
+
+    }
+
+    .main-blok {
+        top: 10%;
+    }
+}
