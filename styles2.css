@@ -9,7 +9,7 @@
     position: absolute;
     width: 100%;
     left: 0%;
-    top: 20%;
+    top: 25%;
     margin: 0;
     padding: 0;
     background-color: var(--color4);
@@ -27,7 +27,28 @@
     font-size: 15px;
 }
 
+/* бегущая строка */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
 
 /* 2 */
 #navbar ul {
@@ -326,6 +347,13 @@
         box-sizing: border-box;
     }
 
+    .main_container1 {
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 9%;
+    }
+
     .main-blok {
         position: absolute;
         width: 42%;
@@ -405,6 +433,13 @@
     padding: 0.375em 0.75em;
 }
 
+.main_container1 {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 10%;
+}
+
 @media only screen and (max-width: 1180px) {
     .btn {
         width: 12.25em;
@@ -418,6 +453,22 @@
     }
 
     .main-blok {
+        top: 10%;
+    }
+}
+
+.main_container1 {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 25%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .main_container1 {
+        position: absolute;
+        width: 100%;
+        left: 0%;
         top: 10%;
     }
 }
