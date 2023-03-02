@@ -9,6 +9,8 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0;
+  font-size: 15px;
+
 }
 
 .container {
@@ -17,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -36,6 +38,7 @@ a {
 }
 
 .main_tel {
+  display: block;
   margin-top: 0 3%;
   font-weight: 500;
   font-size: 16px;
@@ -43,32 +46,63 @@ a {
   padding: 0 3%;
 }
 
-.tel_main {
-  display: block;
-}
 
 .item_text {
   color: var(--van-color);
+
 }
 
 .my_img1 {
   margin-left: 20px;
 }
 
-.facebook_iconka {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  width: 70%;
+
+@media only screen and (min-width: 768px) {
+
+  .container {
+    width: 50%;
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .img_logo {
+    margin-right: 20px;
+  }
+
+  .item_text_logo {
+    font-size: 18px;
+    color: var(--color3);
+  }
+
+  .main_tel {
+    margin-top: 0 3%;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--van-color);
+    padding: 0 3%;
+  }
+
+  .tel_main {
+    display: block;
+  }
+
+  .item_text {
+    color: var(--van-color);
+    font-size: 10px;
+
+  }
+
+  .my_img1 {
+    margin-left: 20px;
+  }
 }
 
-.instagram_icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  width: 70%;
+.main {
+  font-size: 10px;
 }
-
 
 @media (max-width: 767px) {
   .container {
@@ -97,14 +131,6 @@ a {
 
   }
 
-  .item_text {
-    font-size: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    margin-top: 1%;
-
-  }
 
   .my_img1 {
     display: flex;
@@ -122,83 +148,71 @@ a {
 
   }
 
-  .facebook_iconka {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    width: 5%;
+
+  .item_text {
+    color: var(--van-color);
+    font-size: 12px;
+
   }
 
-  .instagram_icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    width: 5%;
-  }
 }
+
+.main {
+  font-size: 10px;
+}
+
 
 /* стили для планшетов */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
-    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .img_logo {
-    width: 5%;
-    padding: 0;
+    margin-right: 20px;
   }
 
   .item_text_logo {
-    font-size: 20px;
-    left: 10%;
-    right: 10%;
-  }
-
-  .item_text_logo:hover {
-    color: blue;
+    font-size: 18px;
+    color: var(--color3);
   }
 
   .main_tel {
-    left: 10%;
-    top: 50%;
-    font-size: 15px;
+    margin-top: 0 3%;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--van-color);
+    padding: 0 3%;
+  }
 
+  .tel_main {
+    display: block;
   }
 
   .item_text {
-    font-size: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    margin-top: 1%;
-
+    color: var(--van-color);
+    font-size: 10px;
   }
 
   .my_img1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-
+    margin-left: 20px;
   }
 
-  .tel_main2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-
-  }
-
-  .facebook_iconka {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    width: 90%;
-  }
-
-  .instagram_icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    width: 90%;
+  .main {
+    font-size: 10px;
   }
 }
+
+
+/* кнопка */
