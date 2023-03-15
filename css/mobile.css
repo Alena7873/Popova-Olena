@@ -1,0 +1,179 @@
+/* @media only screen and (max-width: 1200px) {
+    .container {
+        width: 50%;
+    }
+
+    .list-unstyled {
+        font-size: 50%;
+        margin: 2%;
+    }
+
+    .img_logo {
+        width: 10%;
+
+    }
+
+    .item_text_logo {
+        font-size: 15px;
+    }
+
+    .main_tel {
+        font-size: 10px;
+
+    }
+
+    .main_container1 {
+        position: absolute;
+        width: 100%;
+        top: 25%;
+    }
+
+    .main_container1 {
+        position: absolute;
+        width: 100%;
+        top: 1%;
+        background-color: var(--color01);
+    }
+
+}
+
+
+
+@media only screen and (max-width: 980px) {
+    .list-unstyled {
+        font-size: 65%;
+        margin: 2%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #navbar {
+        flex-direction: row;
+        font-size: 7px;
+    }
+
+    .menu-categories__item {
+        margin: 0 10px;
+    }
+
+    .menu-categories__item:hover .main {
+        display: block;
+    }
+
+    .menu-categories__link.toggle:before {
+        content: '';
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+        padding: 0%;
+    }
+
+    сooter {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .col-md-4 {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    footer form {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .list-unstyled {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .icons_footer {
+        padding: 0 10px;
+        margin: 0;
+        width: 20%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .list-unstyled {
+        font-size: 50%;
+        margin: 2%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    #navbar {
+        height: 30px;
+        background-color: var(--color01);
+        padding-left: 25px;
+        min-width: 201px;
+    }
+
+    .list-unstyled {
+        font-size: 50%;
+        margin: 2%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .navbar {
+        font-size: 15px;
+
+    }
+
+
+    .main {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    #navbar li a {
+        padding: 15px;
+    }
+
+
+    .container1-2blok {
+        top: 15%;
+
+    }
+
+    .main_container1 {
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 10%;
+
+    }
+
+    .list-unstyled {
+        font-size: 80%;
+        margin: 2%;
+    }
+
+
+}
+
+@media only screen and (max-width: 650px) {
+    .list-unstyled {
+        font-size: 80%;
+        margin: 2%;
+    }
+
+    .row {
+        width: 10%;
+        height: auto;
+    }
+} */
