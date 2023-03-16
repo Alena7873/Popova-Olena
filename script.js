@@ -205,3 +205,20 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
+// блок4
+
+const rightText = document.querySelector('.right-text4');
+const leftText = document.querySelector('.left-text4');
+
+rightText.addEventListener('click', function () {
+    rightText.classList.toggle('clicked');
+    leftText.classList.toggle('hidden4');
+    setTimeout(() => {
+        leftText.classList.toggle('hidden4');
+        leftText.classList.toggle('show');
+    }, 10);
+    setTimeout(() => {
+        leftText.classList.toggle('show');
+    }, 310);
+});
+

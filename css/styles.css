@@ -8,6 +8,8 @@
   --color5: white;
   --main-color: #333333;
   --color01: #b1f1e2;
+  --color8: #00868A;
+
 }
 
 * {
@@ -232,7 +234,7 @@ a {
 }
 
 .custom-btn {
-  width: 130px;
+  width: auto;
   height: auto;
   color: #fff;
   border-radius: 5px;
