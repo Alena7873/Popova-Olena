@@ -2,7 +2,7 @@ const image = document.getElementById("myImage");
 const text = document.getElementById("myText");
 
 image.addEventListener("click", () => {
-    text.textContent = "Україна місто вулиця буд ";
+    text.textContent = "Україна на даний час адреса  не доступна";
 });
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -39,6 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
 
 //текст
 // window.onload = function () {
@@ -82,7 +83,17 @@ setInterval(nextSlide, 12000);
 
 
 setInterval(nextSlide, 8000);
-// блок4
+//блок ціна
+
+// tabl
+document.card_blok3.addEventListener("pointermove", (e) => {
+    const { currentTarget: el, clientX: x, clientY: y } = e;
+    const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
+    el.style.setProperty('--posX', x - l - w / 2);
+    el.style.setProperty('--posY', y - t - h / 2);
+})
+
+
 
 
 
