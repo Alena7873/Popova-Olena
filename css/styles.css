@@ -217,6 +217,7 @@ a {
 
   .container {
     width: 190%;
+    margin: 4% auto;
   }
 
   .marquee {
