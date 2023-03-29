@@ -18,9 +18,20 @@
 }
 
 .text_basic {
-    color: #fff;
+    color: floralwhite;
+    font-size: 12px;
 }
 
+.butnns {
+    display: flex;
+    padding: 0%;
+}
+
+
+
+.texfig {
+    color: darkred;
+}
 
 /*  таби */
 .tabsBassic {
@@ -151,6 +162,22 @@
     left: 0px;
     top: 2350px;
 }
+
+.container_blockM {
+    background-color: #3877b4;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.slider_imageBasicM {
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    margin: 13% 1%;
+}
+
+
 
 @media only screen and (max-width: 767px) {
 
