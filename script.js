@@ -86,12 +86,50 @@ setInterval(nextSlide, 8000);
 //блок ціна
 
 // tabl
-document.card_blok3.addEventListener("pointermove", (e) => {
-    const { currentTarget: el, clientX: x, clientY: y } = e;
-    const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
-    el.style.setProperty('--posX', x - l - w / 2);
-    el.style.setProperty('--posY', y - t - h / 2);
-})
+// Отримання елементів табів та їх контенту
+const tabs = document.querySelectorAll('.tab-link');
+const tabContents = document.querySelectorAll('.tab-content');
+
+function resizeTabContent() {
+    tabContents.forEach((tabContent) => {
+        tabContent.style.height = 'auto';
+        const height = tabContent.offsetHeight;
+        tabContent.style.height = height + 'px';
+    });
+}
+
+tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+        tabs.forEach((tab) => tab.classList.remove('active'));
+        tabContents.forEach((tabContent) => tabContent.classList.remove('active'));
+
+        const tabId = tab.dataset.tab;
+        const activeTabContent = document.querySelector(`#${tabId}`);
+        tab.classList.add('active');
+        activeTabContent.classList.add('active');
+
+        resizeTabContent();
+    });
+});
+
+//like
+// Получаем количество лайков из локального хранилища браузера
+var likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
+
+// Обновляем текст на кнопке при загрузке страницы
+document.getElementById("likeButton").innerHTML = '<i class="fa fa-thumbs-up"></i> ' + likeCount;
+
+// Добавляем обработчик события на кнопку
+document.getElementById("likeButton").addEventListener("click", function () {
+    // Увеличиваем количество лайков на 1
+    likeCount++;
+
+    // Сохраняем количество лайков в локальное хранилище браузера
+    localStorage.setItem('likeCount', likeCount);
+
+    // Обновляем текст на кнопке
+    document.getElementById("likeButton").innerHTML = '<i class="fa fa-thumbs-up"></i> ' + likeCount;
+});
 
 
 

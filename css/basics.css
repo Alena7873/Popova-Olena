@@ -1,109 +1,209 @@
 /* основи мед масаж */
-
-.text {
-    column: 2;
-    column-gap: 50px;
-    column-rule: 5px solid green;
-    text-align: center;
-    padding: 17% 1%;
-    height: 500px;
-
+.container_section {
+    width: 100%;
+    height: auto;
+    margin: 0% auto;
 }
 
-.cart_imgbasick {
+.slider_imageBasic {
     display: flex;
-    justify-content: flex-end;
-    width: 60%;
-    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
-/***** Efecto *****/
+.container_block {
+    background-color: #22de49;
+    display: flex;
+    flex-direction: row;
+}
 
-.card-with-hover {
-    position: relative;
+.text_basic {
+    color: #fff;
+}
+
+
+/*  таби */
+.tabsBassic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% auto;
+    height: auto;
+    width: 100%;
     overflow: hidden;
-    background: #3085a3;
-    text-align: center;
-    height: 400px;
+
 }
 
-.card-with-hover>img {
+.tabsBassic {
+    font-size: 18px;
+    color: grey;
+}
+
+.tab-link {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tab-link.active {
+    background-color: #0F9D58;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.tab-content.active {
     display: block;
-    transition: transform 0.35s;
-    transform: translate3d(0, 0, 0);
-    will-change: transform;
 }
 
-.card-with-hover:hover>img {
-    transform: scale(1.15) translate3d(0, -20px, 0);
+.tabsBassic h2 {
+    text-align: center;
+    color: #0c0b0b;
 }
 
-.card-with-hover>.card-caption {
-    position: absolute;
+
+
+.butnn {
+    display: flex;
+    padding: 0% 0% 10% 0%;
+}
+
+.card2 {
+    max-width: 100%;
+    margin: auto;
+
+}
+
+
+.card__img--hover {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
-    left: 0;
+    position: absolute;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     top: 0;
+
+}
+
+.card2 {
+
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #e4ebee;
+    width: 60%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.card2 {
     display: flex;
     justify-content: center;
-    background-color: rgba(23, 28, 47, 0.6);
-
-    transition: all 0.3s;
-    transform: translate3d(0, 100%, 0);
-    will-change: transform;
+    width: 100%;
+    height: auto;
+    margin: 10% auto;
 }
 
-.card-with-hover>.card-caption>.card-caption-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: auto;
-    transition: all 0.3s;
-
-    transform: translate3d(0);
-    will-change: transform;
+.card2:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.10, 1.10);
 }
 
-.card-with-hover>.card-caption h2 {
-    display: block;
-    color: #fff;
-    margin: 0;
-    padding: 1.5rem;
-    transition: all 0.3s;
-    background-color: rgba(23, 28, 47, 0.4);
 
-    transform: translate3d(0, -100%, 0);
-    will-change: transform;
+.card2:hover {
+    height: 100%;
+    opacity: 0.3;
 }
 
-.card-with-hover>.card-caption p {
-    padding: 0 1rem;
-    margin: 0;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.35s 0.1s;
-    transform: translate3d(0);
-    will-change: transform;
+.card2:hover {
+    background-color: transparent;
+    position: relative;
 }
 
-.card-with-hover:hover>.card-caption {
-    transform: translateY(0);
-}
-
-.card-with-hover:hover>.card-caption>.card-caption-content {
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-.card-with-hover:hover>.card-caption h2 {
-    background-color: rgba(255, 255, 255, 0);
-    transform: translateY(0%);
-}
-
-.card-with-hover:hover>.card-caption p {
+.card2:hover {
     opacity: 1;
+}
+
+.aqaa span {
+    text-align: center;
+    color: #ffffff;
+    margin: 2% auto;
+    padding-left: 2%;
+}
+
+#footers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 2350px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .container_section {
+        width: 190%;
+        height: auto;
+        margin: 0% auto;
+    }
+
+    .slider_imageBasic {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+
+    .tabsBassic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2% auto;
+        height: auto;
+        width: 190%;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container_section {
+        width: 190%;
+        height: auto;
+        margin: 0% auto;
+    }
+
+    .slider_imageBasic {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+
+    .tabsBassic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2% auto;
+        height: auto;
+        width: 190%;
+
+    }
+
+    .footers {
+        width: 190%;
+    }
 }

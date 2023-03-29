@@ -125,10 +125,11 @@ a {
   letter-spacing: 2px;
   font-weight: 500;
   color: #868686;
-  width: 100%;
-  height: 500px;
+  width: 60%;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
+  /* выравниваем по центру */
 }
 
 .slide p {
@@ -175,31 +176,11 @@ a {
 
 
 
-
-
-
-/* @keyframes slide {
-
-  0%,
-  33.33% {
-    opacity: 0;
-  }
-
-  33.33%,
-  66.66% {
-    opacity: 1;
-  }
-
-  33.66%,
-  100% {
-    opacity: 0;
-  }
-}
-*/
 @media screen and (max-width: 768px) {
   .slider {
-    height: 500px;
+    height: 579px;
     font-size: 10px;
+    width: 150%;
 
   }
 
