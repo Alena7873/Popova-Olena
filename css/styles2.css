@@ -1068,6 +1068,15 @@ footer {
         padding: 2% 0%;
         width: 190%;
     }
+
+    .slider_imageBasic {
+        display: flex;
+        width: 50%;
+        height: fit-content;
+        margin: 13% 1%;
+
+
+    }
 }
 
 @media screen and (max-width: 1800px) {
