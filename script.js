@@ -113,25 +113,48 @@ tabs.forEach((tab) => {
 });
 
 //like
-// Получаем количество лайков из локального хранилища браузера
-var likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
+// // Получаем количество лайков из локального хранилища браузера
+// var likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
 
-// Обновляем текст на кнопке при загрузке страницы
-document.getElementById("likeButton").innerHTML = '<i class="fa fa-thumbs-up"></i> ' + likeCount;
+// // Обновляем текст на кнопке при загрузке страницы
+// document.getElementById("likeButton").innerHTML = '<i class="fa fa-thumbs-up"></i> ' + likeCount;
 
-// Добавляем обработчик события на кнопку
-document.getElementById("likeButton").addEventListener("click", function () {
-    // Увеличиваем количество лайков на 1
-    likeCount++;
+// // Добавляем обработчик события на кнопку
+// document.getElementById("likeButton").addEventListener("click", function () {
+//     // Увеличиваем количество лайков на 1
+//     likeCount++;
 
-    // Сохраняем количество лайков в локальное хранилище браузера
-    localStorage.setItem('likeCount', likeCount);
+//     // Сохраняем количество лайков в локальное хранилище браузера
+//     localStorage.setItem('likeCount', likeCount);
 
-    // Обновляем текст на кнопке
+//     // Обновляем текст на кнопке
+//     document.getElementById("likeButton").innerHTML = '<i class="fa fa-thumbs-up"></i> ' + likeCount;
+// });
+
+
+//лайк 
+window.onload = function () {
+    let likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
+
     document.getElementById("likeButton").innerHTML = '<i class="fa fa-thumbs-up"></i> ' + likeCount;
-});
 
+    if (localStorage.getItem('likeGiven') === 'true') {
+        document.getElementById("likeButton").disabled = true;
+    }
 
+    document.getElementById("likeButton").addEventListener("click", function () {
+        if (localStorage.getItem('likeGiven') === 'true') {
+            return; // если лайк уже был поставлен, прерываем выполнение функции
+        }
+
+        likeCount++;
+        localStorage.setItem('likeCount', likeCount);
+        localStorage.setItem('likeGiven', 'true');
+
+        document.getElementById("likeButton").innerHTML = '<i class="fa fa-thumbs-up"></i> ' + likeCount;
+        document.getElementById("likeButton").disabled = true;
+    });
+}
 
 
 

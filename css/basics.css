@@ -7,8 +7,15 @@
 
 .slider_imageBasic {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: fit-content;
+    margin: 13% 1%;
+}
+
+.container_blockA {
+    background-color: #74b4a5;
+    display: flex;
+    flex-direction: row;
 }
 
 .container_block {
@@ -31,6 +38,8 @@
 
 .texfig {
     color: darkred;
+    font-size: 18px;
+
 }
 
 /*  таби */
@@ -179,6 +188,19 @@
 
 
 
+.text_basicA {
+    color: floralwhite;
+    font-size: 12px;
+}
+
+.antic-tex span {
+
+    color: #011f51;
+
+}
+
+
+
 @media only screen and (max-width: 767px) {
 
     .container_section {
@@ -204,6 +226,32 @@
 
     }
 
+    .text_basicA {
+        color: floralwhite;
+        font-size: 10px;
+    }
+
+    .tabsBassicA {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2% auto;
+        height: auto;
+        width: 190%;
+
+    }
+
+    .texfig {
+        color: darkred;
+        font-size: 10px;
+
+    }
+
+    .slide>h2 {
+        text-align: center;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -230,7 +278,82 @@
 
     }
 
+    .tabsBassicA {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2% auto;
+        height: auto;
+        width: 190%;
+
+    }
+
+    .text_basicA {
+        color: floralwhite;
+        font-size: 10px;
+    }
+
     .footers {
         width: 190%;
+    }
+
+    .texfig {
+        color: darkred;
+        font-size: 10px;
+
+    }
+
+    .slide>h2 {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text_basicA {
+        color: floralwhite;
+        font-size: 6px;
+        line-height: 1.2;
+    }
+
+    .texfig {
+        color: darkred;
+        font-size: 6px;
+
+    }
+
+    .slide>h2 {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .slider-buttons button {
+        margin: 3%;
+        padding: 0%;
+        background-color: #fff;
+        color: #333;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    .image-text {
+        font-size: 8px;
+    }
+
+    #navbar1 li a {
+        display: block;
+        padding: 6px;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .text_basic {
+        color: floralwhite;
+        font-size: 8px;
+
     }
 }

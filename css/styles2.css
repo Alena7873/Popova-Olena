@@ -219,7 +219,7 @@
     font-size: 13px;
     letter-spacing: 2px;
     font-weight: 500;
-    color: #868686;
+    border-radius: 5px;
 }
 
 .card__img {

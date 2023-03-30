@@ -144,7 +144,7 @@ a {
   top: 0;
   left: 0;
   opacity: 0;
-  animation: slide 12s linear infinite;
+  animation: slide 20s linear infinite;
   margin-bottom: 30px;
 }
 
@@ -356,10 +356,11 @@ a {
   .slider-buttons button {
     margin: 0 47px;
     padding: 0%;
-    border: none;
     background-color: #fff;
     color: #333;
     /* font-size: 16px; */
     cursor: pointer;
   }
+
+
 }
