@@ -909,10 +909,14 @@ footer {
         width: 100%;
     }
 
-    #navbar li {
-
+    #navbar li a {
+        display: block;
+        padding: 6px;
+        width: 100%;
+        color: #20868a;
+        text-decoration: none;
+        text-align: center;
         font-size: 10px;
-
     }
 
     .headers .header_main {
