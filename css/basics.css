@@ -278,13 +278,15 @@
         list-style: none;
         text-align: center;
     }
+
+    .container_blockAmQ {
+        background-color: #90abda;
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
-.container_blockAmQ {
-    background-color: #90abda;
-    display: flex;
-    flex-direction: row-reverse;
-}
+
 
 @media screen and (max-width: 768px) {
     .container_section {

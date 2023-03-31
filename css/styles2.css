@@ -1055,16 +1055,7 @@ footer {
         top: 2790px;
     }
 
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        width: 190%;
-        height: auto;
-        left: 0px;
-        top: 2697px;
-    }
+
 
     .headers .header_main {
         display: flex;
