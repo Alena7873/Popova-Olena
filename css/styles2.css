@@ -996,7 +996,12 @@ footer {
         height: fit-content;
         margin: 13% 1%;
 
+    }
 
+    #likeButton {
+
+        text-align: center;
+        margin: auto;
     }
 }
 

@@ -276,13 +276,19 @@
     .container-z>ol,
     .container-z>ul {
         list-style: none;
-        text-align: center;
+        margin: auto;
     }
 
     .container_blockAmQ {
         background-color: #90abda;
         display: flex;
         flex-direction: row-reverse;
+    }
+
+    #likeButton {
+
+        text-align: center;
+        margin: auto;
     }
 }
 
