@@ -102,9 +102,10 @@
     display: block;
     padding: 6px;
     width: 100%;
-    color: var(--main-color);
+    color: #20868a;
     text-decoration: none;
     text-align: center;
+    font-size: 15px;
 }
 
 
