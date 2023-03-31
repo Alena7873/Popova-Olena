@@ -887,10 +887,10 @@ footer {
         justify-content: space-between;
         align-items: center;
         position: absolute;
-        width: 100%;
+        width: 190%;
         height: auto;
         left: 0px;
-        top: 2350px;
+        top: 2621px;
     }
 
     .header {
@@ -1027,7 +1027,7 @@ footer {
         position: absolute;
         width: 190%;
         height: auto;
-        margin: 5% auto;
+        margin: 40% auto;
         background-color: var(--color8);
     }
 
@@ -1050,7 +1050,7 @@ footer {
         width: 190%;
         height: 30%;
         left: 0px;
-        top: 2303px;
+        top: 2161px;
     }
 
     .main_content6 {
