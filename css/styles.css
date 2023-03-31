@@ -129,7 +129,7 @@ a {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  /* выравниваем по центру */
+  text-align: center;
 }
 
 .slide p {

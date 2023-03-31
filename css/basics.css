@@ -9,7 +9,7 @@
     display: flex;
     width: 50%;
     height: fit-content;
-    margin: 13% 1%;
+    margin: 13% 2%;
 }
 
 .container_blockA {
@@ -272,6 +272,18 @@
         color: darkred;
         font-size: 18px;
     }
+
+    .container-z>ol,
+    .container-z>ul {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+.container_blockAmQ {
+    background-color: #90abda;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 768px) {

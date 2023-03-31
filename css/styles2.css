@@ -956,8 +956,7 @@ footer {
     }
 
     .text-containerZ {
-        color: #000;
-        padding: 3%;
+        padding: 2%;
         margin: 2% auto;
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
@@ -1094,7 +1093,7 @@ footer {
         display: flex;
         width: 50%;
         height: fit-content;
-        margin: 13% 1%;
+        margin: 13% 3%;
 
 
     }
