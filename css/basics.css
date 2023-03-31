@@ -277,6 +277,7 @@
     .container-z>ul {
         list-style: none;
         margin: auto;
+        font-style: normal;
     }
 
     .container_blockAmQ {
