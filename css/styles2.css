@@ -130,7 +130,7 @@
     background-image: url('../img/masah126.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     margin: 2% auto;
     padding: 2% 0%;
 }
@@ -152,9 +152,8 @@
 }
 
 #likeButton {
-    margin-left: auto;
     text-align: center;
-    margin-right: 5%;
+
 }
 
 .container-z>ol,
@@ -766,7 +765,7 @@ footer {
     display: block;
     padding: 6px;
     width: 100%;
-    color: white;
+    color: #0b8e8e;
     text-decoration: none;
     text-align: center;
 }
@@ -791,15 +790,15 @@ footer {
 .card_blok3 {
 
     transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-    background-color: var(--color3);
+    background-color: #b1f1e2;
     width: 100%;
     position: relative;
     border-radius: 12px;
     overflow: hidden;
     --x: calc(var(--posX, 0) * 1px);
     --y: calc(var(--posY, 0) * 1px);
-    background-image:
-        linear-gradient(115deg, rgb(255 241 100), rgb(20 59 49)), radial-gradient(90% 100% at calc(50% + var(--x)) calc(0% + var(--y)), rgb(251 251 250), rgb(3 24 25)), radial-gradient(100% 100% at calc(80% - var(--x)) calc(0% - var(--y)), rgb(19, 103, 142), rgb(113, 201, 230)), radial-gradient(150% 210% at calc(100% + var(--x)) calc(0% + var(--y)), rgb(20, 175, 125), rgb(246 20 20)), radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(245 32 153), rgb(160 123 105)), linear-gradient(60deg, rgb(122 12 255), rgb(233 243 245));
+    background-image: linear-gradient(115deg, rgb(48 163 162), rgb(20 59 49));
+    --background-image: linear-gradient(115deg, rgb(255 241 100), rgb(20 59 49)), radial-gradient(90% 100% at calc(50% + var(--x)) calc(0% + var(--y)), rgb(251 251 250), rgb(3 24 25)), radial-gradient(100% 100% at calc(80% - var(--x)) calc(0% - var(--y)), rgb(19, 103, 142), rgb(113, 201, 230)), radial-gradient(150% 210% at calc(100% + var(--x)) calc(0% + var(--y)), rgb(20, 175, 125), rgb(246 20 20)), radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(245 32 153), rgb(160 123 105)), linear-gradient(60deg, rgb(122 12 255), rgb(233 243 245));
     background-blend-mode: overlay, overlay, difference, difference, difference, normal;
     border-radius: 5px;
     cursor: pointer;
@@ -965,15 +964,17 @@ footer {
     }
 
     .card_blok3 {
+
         transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-        background-color: var(--color3);
+        background-color: #b1f1e2;
         width: 190%;
         position: relative;
         border-radius: 12px;
         overflow: hidden;
         --x: calc(var(--posX, 0) * 1px);
         --y: calc(var(--posY, 0) * 1px);
-        background-image: linear-gradient(115deg, rgb(255 241 100), rgb(20 59 49)), radial-gradient(90% 100% at calc(50% + var(--x)) calc(0% + var(--y)), rgb(251 251 250), rgb(3 24 25)), radial-gradient(100% 100% at calc(80% - var(--x)) calc(0% - var(--y)), rgb(19, 103, 142), rgb(113, 201, 230)), radial-gradient(150% 210% at calc(100% + var(--x)) calc(0% + var(--y)), rgb(20, 175, 125), rgb(246 20 20)), radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(245 32 153), rgb(160 123 105)), linear-gradient(60deg, rgb(122 12 255), rgb(233 243 245));
+        background-image: linear-gradient(115deg, rgb(48 163 162), rgb(20 59 49));
+        --background-image: linear-gradient(115deg, rgb(255 241 100), rgb(20 59 49)), radial-gradient(90% 100% at calc(50% + var(--x)) calc(0% + var(--y)), rgb(251 251 250), rgb(3 24 25)), radial-gradient(100% 100% at calc(80% - var(--x)) calc(0% - var(--y)), rgb(19, 103, 142), rgb(113, 201, 230)), radial-gradient(150% 210% at calc(100% + var(--x)) calc(0% + var(--y)), rgb(20, 175, 125), rgb(246 20 20)), radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(245 32 153), rgb(160 123 105)), linear-gradient(60deg, rgb(122 12 255), rgb(233 243 245));
         background-blend-mode: overlay, overlay, difference, difference, difference, normal;
         border-radius: 5px;
         cursor: pointer;
@@ -999,9 +1000,9 @@ footer {
     }
 
     #likeButton {
-
         text-align: center;
         margin: auto;
+        font-size: 20px;
     }
 }
 
