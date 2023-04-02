@@ -128,7 +128,7 @@ a {
   width: 60%;
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 5% auto;
   text-align: center;
 }
 
@@ -180,7 +180,7 @@ a {
 @media screen and (max-width: 768px) {
   .slider {
     height: auto;
-    font-size: 10px;
+    font-size: 12px;
     width: 150%;
   }
 
