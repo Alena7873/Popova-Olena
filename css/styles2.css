@@ -1043,6 +1043,7 @@ footer {
         overflow: hidden;
     }
 
+
     .main_content5 {
         display: flex;
         justify-content: space-between;
@@ -1051,7 +1052,7 @@ footer {
         width: 190%;
         height: 30%;
         left: 0px;
-        top: 2160px;
+        top: 2383px;
     }
 
     .main_content6 {
@@ -1093,6 +1094,17 @@ footer {
         margin: 13% 3%;
 
 
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 190%;
+        height: auto;
+        left: 0px;
+        top: 2900px;
     }
 }
 
