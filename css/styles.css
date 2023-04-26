@@ -55,6 +55,41 @@ a {
   color: var(--color3);
 }
 
+.item_text_logo {
+  position: relative;
+  display: inline-block;
+  font-size: 28px;
+  color: #00868a;
+}
+
+.item_text_logo:hover:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: #b1f1e2;
+  animation: line-anim 1s ease-in-out;
+}
+
+@keyframes line-anim {
+  0% {
+    width: 0%;
+    left: 50%;
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0%;
+    left: 0%;
+  }
+}
+
 .main_tel {
   display: block;
   margin-top: 0 3%;

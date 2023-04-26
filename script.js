@@ -2,7 +2,7 @@ const image = document.getElementById("myImage");
 const text = document.getElementById("myText");
 
 image.addEventListener("click", () => {
-    text.textContent = "Україна на даний час адреса  не доступна";
+    text.textContent = "Київ Урловская 21";
 });
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -83,7 +83,7 @@ setInterval(nextSlide, 12000);
 
 
 setInterval(nextSlide, 8000);
-//блок ціна
+
 
 // tabl
 // Отримання елементів табів та їх контенту
@@ -165,4 +165,7 @@ $('.hero-btn').click(function () {
         }, 2000);
     }
 });
+
+
+//prise
 

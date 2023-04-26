@@ -394,47 +394,41 @@
 
             </section>
 
-            <!-- 6-->
+            <section class="price" id="price">
+                <div class="containerP">
+                    <h2 class="sub-title">
+                        Дізнатися ціну та забронювати
+                    </h2>
+
+                    <form action="./process.php" class="price-form" id="price-form" method="post">
+                        <input type="text" class="price-input" id="name" name="name" placeholder="Ваше имя">
+                        <input type="text" class="price-input" id="phone" name="phone" placeholder="Ваш телефон"
+                            pattern="[0-9]{10}" title="Введите 10 цифр телефона без пробелов и других символов">
+                        <input type="text" class="price-input" id="mas" name="mas"
+                            placeholder="Масаж, якій вас цікавить ">
+                        <label for="formAgreement" class="checkbox_label">
+                            <input type="checkbox" id="formAgreement" name="formAgreement"> Я даю свою згоду на
+                            обробку персональних даних
+                        </label>
+
+                        <button class="button" type="submit" id="price-action">Дізнатися ціну</button>
+                    </form>
+
+                </div>
+            </section>
             <section>
-                <footers>
-                    <div class=" card_blok3 ">
-                        <ul id="navbar1">
-                            <li><a class="image-text" href="#">Інформація</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#">Угода користувача</a>
-                            </li>
-                            <li>
-                                <a href="tel:+380505216550"> <span> Контакти 24/7 : </span> 050-521-65-50
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">Адреса</a>
-                            </li>
-                            <li class="menu-categories__item  "><a href="#"><img src="./img/facebook.svg"
-                                        alt="facebook"></a>
-                            </li>
-                            <li class="menu-categories__item "><a href="#"><img src="./img/instagram.svg"
-                                        alt="instagram"></a>
-                            </li>
-                        </ul>
-                        <p class="qweer"> &copy; 2023</p>
-
-                        <!-- <button type="button" class="custom-btn btn-16 btn2">
-                        <a href="./index.html">Кабінет масажу</a>
-                    </button> -->
-
-
+                <footer class="footer">
+                    <div class="navbar">
+                        <div class="logo">
+                            <a href="tel:+380505216550"> <span> Контакти 24/7 </span> 050-521-65-50
+                            </a>
+                        </div>
+                        <div class="rights">Всі права захищені &copy; 2023 </div>
                     </div>
-
-                </footers>
+                </footer>
 
             </section>
         </section>
-
-
 
 
 

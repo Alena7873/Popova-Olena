@@ -168,7 +168,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 2% auto;
     padding: 0% 2%;
 
 }
@@ -179,9 +179,9 @@
 }
 
 .card_blok2 {
-    margin-right: 1%;
+    margin: 0 auto;
     transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-    background-color: var(--color3);
+    /* background-color: var(--color3); */
     width: 80%;
     position: relative;
     border-radius: 12px;
@@ -194,7 +194,8 @@
     background-color: #fff;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    padding: 16px 24px 24px 24px;
+    /* padding: 7px 24px 29px 24px; */
+    margin: 0 auto;
 }
 
 .menu ul {
@@ -592,7 +593,7 @@
     width: 100%;
     height: 30%;
     left: 0px;
-    top: 2579px;
+    top: 2040px;
 }
 
 .content_main5 {
@@ -692,124 +693,303 @@
 }
 
 
-
-
-/*  6*/
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    left: 0px;
-    top: 2900px;
+/* 5.2 */
+.card-front__heading {
+    font-size: 1.5rem;
+    margin-top: .25rem;
 }
 
-.qweer {
-    text-align: center;
+
+.inside-page__heading {
+    padding-bottom: 1rem;
     width: 100%;
 }
 
-.container-z img {
-    width: 100%;
-    height: auto;
+.inside-page__heading,
+.card-front__text-view {
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: .2rem;
 }
 
-#navbar1 {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    box-sizing: border-box;
-    color: #fff;
-    padding: 1% 0%;
+.inside-page__heading--city,
+.card-front__text-view--city {
+    color: #00868a;
+    ;
 }
 
-#navbar1 li:hover ul {
-    display: flex;
+.inside-page__heading--ski,
+.card-front__text-view--ski {
+    color: #2aaac1;
 }
 
-.navbar1 li:hover span {
-    color: red;
+.inside-page__heading--beach,
+.card-front__text-view--beach {
+    color: #fa7f67;
 }
 
-#navbar1,
-#navbar1 ul {
-    margin: 0;
-    padding: 1%;
-    list-style-type: none;
-}
-
-#navbar1 ul li {
-    float: none;
+.inside-page__heading--camping,
+.card-front__text-view--camping {
+    color: #00b97c;
 }
 
 
-#navbar1 ul {
 
-    display: none;
-    justify-content: center;
-    position: absolute;
-    border-radius: 5%;
-
+.card-front__tp {
+    color: #fafbfa;
 }
 
-#navbar1 li {
-    float: left;
+.card-front__text-price {
+    font-size: 1.2rem;
+    margin-top: -.2rem;
+}
+
+.inside-page__text {
+    color: #333;
+    margin-top: 1%;
+}
+
+
+.card-front__icon {
+    fill: #fafbfa;
+    font-size: 3vw;
+    height: 3.25rem;
+    margin-top: -.5rem;
+    width: 3.25rem;
+}
+
+
+.inside-page__btn {
+    background-color: transparent;
+    border: 3px solid;
+    border-radius: .5rem;
+    font-size: 12px;
+    font-weight: 600;
+
+    overflow: hidden;
+    padding: .7rem .75rem;
     position: relative;
-    height: 100%;
-}
-
-#navbar1 li a {
-    display: block;
-    padding: 6px;
-    width: 100%;
-    color: #0b8e8e;
     text-decoration: none;
+    transition: all .3s ease;
+    width: 90%;
+    z-index: 10;
+}
+
+.inside-page__btn::before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleY(0);
+    transition: all .3s ease;
+    width: 100%;
+    z-index: -1;
+}
+
+.inside-page__btn--city {
+    border-color: #00868a;
+    color: #5f6362;
+}
+
+.inside-page__btn--city::before {
+    background-color: #00868a;
+    ;
+}
+
+.inside-page__btn--ski {
+    border-color: #279eb2;
+    color: black;
+}
+
+.inside-page__btn--ski::before {
+    background-color: #279eb2;
+}
+
+
+
+.inside-page__btn:hover::before {
+    transform: scaleY(1);
+}
+
+.main {
+    background: linear-gradient(to bottom right,
+            #eee8dd,
+            #e3d9c6);
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 190%;
+}
+
+.card-area {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+
+
+.card-section {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.card {
+    background-color: rgba(0, 0, 0, .05);
+    box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
+    height: 15rem;
+    position: relative;
+    transition: all 1s ease;
+    width: 15rem;
+}
+
+
+.flip-card {
+    height: 15rem;
+    perspective: 100rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    visibility: hidden;
+    width: 15rem;
+    z-index: 100;
+}
+
+.flip-card>* {
+    visibility: visible;
+}
+
+
+.flip-card__container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    width: 100%;
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.card-front {
+    background-color: #fafbfa;
+    height: 15rem;
+    width: 15rem;
+}
+
+.card-front__tp {
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    justify-content: center;
+    padding: .75rem;
+}
+
+.card-front__tp--city {
+    background: linear-gradient(to bottom,
+            #7bf1e1,
+            #00868a);
+}
+
+.card-front__tp--ski {
+    background: linear-gradient(to bottom,
+            #47c2d7,
+            #279eb2);
+}
+
+.card-front__tp--beach {
+    background: linear-gradient(to bottom,
+            #fb9b88,
+            #f86647);
+}
+
+.card-front__tp--camping {
+    background: linear-gradient(to bottom,
+            #00db93,
+            #00b97d);
+}
+
+/* Front card's bottom section */
+.card-front__bt {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for the back side of the flip card */
+
+.card-back {
+    background-color: #fafbfa;
+    transform: rotateY(180deg);
+}
+
+/* Specifically targeting the <video> element */
+.video__container {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Inside page */
+
+.inside-page {
+    background-color: #fafbfa;
+    box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    width: 15rem;
+    z-index: 1;
+}
+
+.inside-page__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-align: center;
-}
-
-
-
-#navbar1 li a span {
-    color: rgb(4, 4, 4);
-
-}
-
-.footer-container {
-    margin-right: 1%;
-    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-    width: 80%;
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-
-}
-
-.card_blok3 {
-
-    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-    background-color: #b1f1e2;
     width: 100%;
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    --x: calc(var(--posX, 0) * 1px);
-    --y: calc(var(--posY, 0) * 1px);
-    background-image: linear-gradient(115deg, rgb(48 163 162), rgb(20 59 49));
-    --background-image: linear-gradient(115deg, rgb(255 241 100), rgb(20 59 49)), radial-gradient(90% 100% at calc(50% + var(--x)) calc(0% + var(--y)), rgb(251 251 250), rgb(3 24 25)), radial-gradient(100% 100% at calc(80% - var(--x)) calc(0% - var(--y)), rgb(19, 103, 142), rgb(113, 201, 230)), radial-gradient(150% 210% at calc(100% + var(--x)) calc(0% + var(--y)), rgb(20, 175, 125), rgb(246 20 20)), radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(245 32 153), rgb(160 123 105)), linear-gradient(60deg, rgb(122 12 255), rgb(233 243 245));
-    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
-    border-radius: 5px;
-    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow:
+        -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+    width: 30rem;
 }
 
 
-.footer-container1 {
-    background-color: var(--color01);
-    width: 100%;
-    height: 50%
+.card:hover .flip-card__container {
+    transform: rotateY(-180deg);
 }
+
+.card:hover .inside-page {
+    box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+}
+
+
 
 .btn-16 {
     /* background: var(--color4); */
@@ -845,6 +1025,7 @@ footer {
 .btn-16:active {
     top: 2px;
 }
+
 
 @media only screen and (max-width: 767px) {
 
@@ -889,7 +1070,32 @@ footer {
         width: 190%;
         height: auto;
         left: 0px;
-        top: 2621px;
+        top: auto;
+
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        width: 190%;
+        margin: 0% auto;
+        padding: 0;
+        opacity: 1;
+        margin-right: 180%;
+        transition: opacity 1s ease-in-out;
+
+    }
+
+    .mas {
+        padding: 50%;
+        margin: 100% auto;
+    }
+
+    .price {
+        background-image: url(../img/imageP16.jpg);
+        width: 190%;
     }
 
     .header {
@@ -1004,6 +1210,94 @@ footer {
         margin: auto;
         font-size: 20px;
     }
+
+    main {
+        position: relative;
+        width: 190%;
+    }
+
+    .main_content-p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 190%;
+        height: 30%;
+        left: 0px;
+        top: 1626px;
+    }
+
+    .cardss1 {
+        width: 40%;
+        position: absolute;
+        background: white;
+        margin: 0% auto;
+        top: 0%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+
+    .cardss {
+        width: 40%;
+        position: absolute;
+        background: white;
+        margin: 0% auto;
+        top: 0%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+
+    .description h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        padding-bottom: 0.3em;
+        font-size: 18px;
+        border-bottom: 1px solid #f2f4f5;
+    }
+
+    .description {
+        padding: 30px;
+        float: left;
+        width: 100%;
+        border-left: 2px solid #efefef;
+    }
+
+    .photo {
+        padding: 30px;
+        text-align: center;
+        float: left;
+    }
+
+    .sub-title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 70px;
+        color: #030305;
+    }
+
+    .mas-items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 190%;
+    }
+
+    .price-formm {
+        display: flex;
+        width: 190%;
+        margin: 500% 0 auto;
+
+    }
 }
 
 
@@ -1028,7 +1322,7 @@ footer {
         position: absolute;
         width: 190%;
         height: auto;
-        margin: 40% auto;
+        margin: 40% 0% auto;
         background-color: var(--color8);
     }
 
@@ -1052,7 +1346,7 @@ footer {
         width: 190%;
         height: 30%;
         left: 0px;
-        top: 2383px;
+        margin: 0 auto;
     }
 
     .main_content6 {
@@ -1096,7 +1390,7 @@ footer {
 
     }
 
-    footer {
+    /* footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1104,8 +1398,70 @@ footer {
         width: 190%;
         height: auto;
         left: 0px;
-        top: 2900px;
+        top: 3177px;
+    } */
+
+    .main_content-p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 190%;
+        height: 30%;
+        left: 0px;
+        top: 1626px;
     }
+
+    .cardss1 {
+        width: 40%;
+        position: absolute;
+        background: white;
+        margin: 0% auto;
+        top: 0%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+
+    .cardss {
+        width: 40%;
+        position: absolute;
+        background: white;
+        margin: 0% auto;
+        top: 0%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+
+    .description h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        padding-bottom: 0.3em;
+        font-size: 18px;
+        border-bottom: 1px solid #f2f4f5;
+    }
+
+    .description {
+        padding: 30px;
+        float: left;
+        width: 100%;
+        border-left: 2px solid #efefef;
+    }
+
+    .photo {
+        padding: 30px;
+        text-align: center;
+        float: left;
+    }
+
 }
 
 @media screen and (max-width: 1800px) {
@@ -1117,7 +1473,70 @@ footer {
 
     }
 
+    .price-formm {
+        display: flex;
+        width: 100%;
+        margin: 160% 0 auto;
+    }
+
+    .mas {
+        margin: 100% 0 auto;
+    }
+
+    .footerind {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+
 }
 
+@media screen and (max-width: 896px) {
+    .section_main4 {
 
-/* навбар */
+        width: 240%;
+
+    }
+
+    .section_main3 {
+        width: 240%;
+    }
+
+    .container {
+        width: 240%;
+    }
+
+    .container-z {
+        width: 240%;
+    }
+
+    .headers .header_main {
+        width: 240%;
+    }
+
+    .marquee {
+        width: 240%;
+    }
+
+    .main_content5 {
+        width: 240%;
+    }
+
+    .container_section {
+        width: 240%;
+    }
+
+    .tabsBassic {
+        width: 240%;
+    }
+
+    .price {
+        width: 240%;
+    }
+
+    .footer {
+        width: 240%;
+    }
+}
