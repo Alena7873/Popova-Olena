@@ -1089,7 +1089,7 @@
     }
 
     .mas {
-        padding: 50%;
+
         margin: 100% auto;
     }
 
@@ -1280,7 +1280,7 @@
     .sub-title {
         font-weight: bold;
         font-size: 30px;
-        line-height: 70px;
+        line-height: 1.5;
         color: #030305;
     }
 
@@ -1496,47 +1496,52 @@
 @media screen and (max-width: 896px) {
     .section_main4 {
 
-        width: 240%;
+        width: 100%;
 
     }
 
     .section_main3 {
-        width: 240%;
+        width: 100%;
     }
 
     .container {
-        width: 240%;
+        width: 100%;
     }
 
     .container-z {
-        width: 240%;
+        width: 190%;
     }
 
     .headers .header_main {
-        width: 240%;
+        width: 190%;
     }
 
     .marquee {
-        width: 240%;
+        width: 190%;
     }
 
     .main_content5 {
-        width: 240%;
+        width: 100%;
     }
 
     .container_section {
-        width: 240%;
+        width: 190%;
     }
 
     .tabsBassic {
-        width: 240%;
+        width: 190%;
     }
 
     .price {
-        width: 240%;
+        width: 190%;
+        display: flex;
     }
 
     .footer {
-        width: 240%;
+        width: 190%;
+    }
+
+    .slideshow {
+        width: 100%;
     }
 }
