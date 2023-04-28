@@ -1,8 +1,8 @@
 <?php
-// Получаем значения полей из формы
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$mas = $_POST['mas'];
+// Получаем значения полей из формы и обрабатываем их
+$name = htmlspecialchars($_POST['name'], ENT_QUOTES);
+$phone = filter_var($_POST['phone'], FILTER_SANITIZE_NUMBER_INT);
+$mas = htmlspecialchars($_POST['mas'], ENT_QUOTES);
 
 // Устанавливаем адрес, на который будут приходить письма
 $to = 'masah7727427@gmail.com';
@@ -14,7 +14,7 @@ $subject = 'Запрос на бронирование массажа';
 $message = "Имя: $name \nТелефон: $phone \nМассаж: $mas";
 
 // Устанавливаем заголовки для письма
-$headers = "From: masah7727427@gmail.com\r\nReply-To: masah7727427@gmail.com\r\nX-Mailer: PHP/" . phpversion();
+$headers = "From: <masah7727427@gmail.com>\r\nReply-To: <masah7727427@gmail.com>\r\nX-Mailer: PHP/" . phpversion();
 
 // Отправляем письмо
 if (mail($to, $subject, $message, $headers)) {

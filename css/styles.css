@@ -161,10 +161,12 @@ a {
   font-weight: 500;
   color: #868686;
   width: 60%;
+  height: auto;
   position: relative;
   overflow: hidden;
-  margin: 0% auto;
+  margin: 10% auto;
   text-align: center;
+
 }
 
 .slide p {

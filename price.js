@@ -86,4 +86,20 @@ document.getElementById("price-action").addEventListener("click", function (even
 });
 
 
+$(document).ready(function () {
+    $("#price-form").submit(function () {
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "./process.php",
+            data: th.serialize()
+        }).done(function () {
+            alert("Thank you!");
+            setTimeout(function () {
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+});
 

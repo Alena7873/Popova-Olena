@@ -749,6 +749,7 @@ button {
     max-width: 1200px;
     margin: 0 auto;
 
+
 }
 
 .header .containerP {
@@ -1077,4 +1078,37 @@ textarea.form_input {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+}
+
+/* відгуки */
+
+
+main {
+    padding: 20px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+}
+
+.review {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin: 2% 0;
+
+}
+
+.main_reviews-f {
+    padding: 2% 0;
+    margin: 2% auto;
+}
+
+.qwerty {
+    color: #181a19
 }
