@@ -858,15 +858,18 @@
                     Дізнатися ціну та забронювати
                 </h2>
 
-                <a href="https://www.facebook.com/groups/912759503111081/?hoisted_section_header_type=recently_seen&multi_permalinks=918294579224240"
-                    target="_blank"><img src="./img/facebook.svg" alt="facebook"> </a>
-                <a href="+3050-521-65-50" target="_blank"><img src="./img/_viber_icon.svg" alt="viber"></a>
-                <a href="https://www.instagram.com/elena6024popova/?igshid=ZDdkNTZiNTM%3D" target="_blank"><img
-                        src="./img/instagram.svg" alt="instagram"></a>
+                <form action="./process.php" class="price-form" id="price-form" method="post">
+                    <input type="text " class="price-input" id="name" name="name" placeholder="Ваше имя">
+                    <input type="text" class="price-input" id="phone" name="phone" placeholder="Ваш телефон"
+                        pattern="[0-9]{10}" title="Введите 10 цифр телефона без пробелов и других символов">
+                    <input type="text" class="price-input" id="mas" name="mas" placeholder="Масаж, якій вас цікавить">
+                    <button class="button" type="submit" id="price-action">Дізнатися ціну</button>
+
 
 
 
                 </form>
+
 
             </div>
         </section>
@@ -874,10 +877,29 @@
             <footer class="footer">
                 <div class="navbar">
                     <div class="logo">
-                        <a href="tel:+380505216550"> <span> Контакти 24/7 </span> 050-521-65-50
-                        </a>
+
+                        <p class="fa">м.Київ</p>
                     </div>
-                    <div class="rights">Всі права захищені &copy; 2023 </div>
+                    <p>Політика конфіденційності</p>
+                    <p class="mas-item-poin">Контакти для зв'язку || 24/7 ||
+                        <a href="tel:+380505216550"> 050-521-65-50
+                        </a>
+                    </p>
+                    <div class="mas-item-poin">
+                        <p> З усіх питань:</p>
+
+                        <div class="seti">
+                            <a href="https://www.facebook.com/groups/912759503111081/?hoisted_section_header_type=recently_seen&multi_permalinks=918294579224240"
+                                target="_blank"><img src="./img/facebook.svg" alt="facebook"> </a>
+
+                            </a>
+                            <a href="https://www.instagram.com/elena6024popova/?igshid=ZDdkNTZiNTM%3D"
+                                target="_blank"><img src="./img/instagram.svg" alt="instagram"></a>
+
+                        </div>
+                    </div>
+                    <div class="rights">Усі права захищені, будь-яке копіювання матеріалів можна лише за згодою
+                        правовласниці. &copy; 2023 </div>
                 </div>
             </footer>
 

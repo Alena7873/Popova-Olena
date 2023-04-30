@@ -1113,3 +1113,13 @@ main {
 .qwerty {
     color: #181a19
 }
+
+.seti {
+    display: flex;
+    justify-content: left;
+
+}
+
+.fa {
+    padding-right: 2%;
+}
