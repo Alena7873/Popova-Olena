@@ -459,7 +459,7 @@ main {
     .slideshow {
         overflow: hidden;
         margin: 0;
-        height: 100vh;
+        height: 69vh;
     }
 
     .slide {
@@ -748,6 +748,7 @@ button {
 .containerP {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 10%;
 
 
 }
@@ -955,7 +956,7 @@ button {
 }
 
 .price {
-    background-image: url("../img/imageP16.jpg");
+    background-image: url("../img/imageP22.jpg");
 }
 
 .price-formm {

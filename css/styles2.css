@@ -1089,8 +1089,10 @@
     }
 
     .mas {
+        margin: 0 auto;
 
-        margin: 100% auto;
+        padding-top: 100%;
+        padding-left: 50%;
     }
 
     .price {
@@ -1214,6 +1216,7 @@
     main {
         position: relative;
         width: 190%;
+
     }
 
     .main_content-p {
@@ -1479,10 +1482,7 @@
         margin: 160% 0 auto;
     }
 
-    .mas {
-        margin: 0 auto;
-        padding-top: 110%;
-    }
+
 
     .footerind {
         position: fixed;
@@ -1490,6 +1490,11 @@
         bottom: 0;
         width: 100%;
     }
+
+    .slideshow {
+        width: 100%;
+    }
+
 
 
 
@@ -1547,4 +1552,5 @@
     .slideshow {
         width: auto;
     }
+
 }
