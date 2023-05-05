@@ -103,3 +103,6 @@ $(document).ready(function () {
     });
 });
 
+//рейтинг 
+
+

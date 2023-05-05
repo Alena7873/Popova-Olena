@@ -814,7 +814,7 @@ button {
 
 .button {
     padding: 20px;
-    width: 334px;
+    width: auto;
     height: 54px;
     background: #030305;
     border: 0;
@@ -1088,27 +1088,17 @@ main {
     padding: 20px;
 }
 
-.reviews {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
 
 
-}
-
-.review {
+.reviewR {
     background-color: #f4f4f4;
-    border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
     margin: 2% 0;
-
+    padding-left: 20%;
 }
 
-.main_reviews-f {
-    padding: 2% 0;
-    margin: 2% auto;
-}
+
 
 .qwerty {
     color: #181a19
@@ -1122,4 +1112,14 @@ main {
 
 .fa {
     padding-right: 2%;
+}
+
+.checkbox_labelR {
+    font-size: 10px;
+    color: #181313;
+    line-height: 140%;
+    display: block;
+    padding: 5% 0;
+    /* align-items: center; */
+    cursor: pointer;
 }
