@@ -127,15 +127,17 @@
 .container-z {
     display: flex;
     align-items: center;
-    background-image: url('../img/masah126.jpg');
-    background-size: contain;
+    background-image: url('../img/imageword2.jpg');
+    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position: right;
     margin: 2% auto;
     padding: 2% 0%;
 }
 
-
+.text-container {
+    margin: 0;
+}
 
 .vaq:hover {
     color: #4FBFA5;
@@ -1301,6 +1303,11 @@
         margin: 500% 0 auto;
 
     }
+
+    .card-work-hover {
+
+        width: 170%;
+    }
 }
 
 
@@ -1375,7 +1382,7 @@
     .container-z {
         display: flex;
         align-items: center;
-        background-image: url(../img/masah126.jpg);
+        background-image: url('../img/imageword2.jpg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;

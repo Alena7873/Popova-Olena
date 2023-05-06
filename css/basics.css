@@ -1236,7 +1236,7 @@ section.cardMassah {
 
             &:hover {
                 background: #000;
-                color: white
+                color: white;
             }
         }
     }
@@ -1254,7 +1254,7 @@ section.cardMassah {
             2px 6px 12px fade(black, 25%);
 
         img {
-            height: 110%
+            height: 110%;
         }
     }
 
@@ -1265,7 +1265,7 @@ section.cardMassah {
 
         .visual {
             right: 24px;
-            left: auto
+            left: auto;
         }
 
         .text-contentArticles a {
@@ -1297,7 +1297,7 @@ article {
 
 @media all and (max-width:1100px) {
     .articless-massah {
-        padding: 96px 48px 24px
+        padding: 96px 48px 24px;
     }
 
     article {
@@ -1319,14 +1319,14 @@ article {
     }
 
     &:nth-of-type(odd) {
-        margin: 0
+        margin: 0;
     }
 }
 
 
 @media all and (max-width:720px) {
     .articless-massah {
-        padding: 48px 24px 0
+        padding: 48px 24px 0;
     }
 
     section.cardMassah {
@@ -1409,7 +1409,8 @@ article {
     display: flex;
     justify-content: center;
     background-color: rgba(23, 28, 47, 0.6);
-
+    font-size: 24px;
+    color: aqua;
     transition: all 0.3s;
     transform: translate3d(0, 100%, 0);
     will-change: transform;
