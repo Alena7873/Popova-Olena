@@ -1192,7 +1192,7 @@
 /* massah articles */
 
 .timeline_body {
-    width: 730px;
+    width: 725px;
     height: auto;
     margin: auto;
     position: relative;
@@ -1204,7 +1204,7 @@
 
 .bioYear {
     clear: left;
-    width: 730px;
+    width: 725px;
     margin: 32px 0 64px;
     display: table;
     padding: 32px 0 0;
@@ -1246,7 +1246,7 @@
 .bioLine {
     height: 100%;
     overflow: hidden;
-    width: 730px;
+    width: 725px;
     position: relative;
 }
 

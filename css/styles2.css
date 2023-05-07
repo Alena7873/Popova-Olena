@@ -1472,6 +1472,17 @@
         float: left;
     }
 
+    .timeline_body {
+        width: 190%;
+        height: auto;
+        margin: auto;
+        position: relative;
+        background: #d7e2d6;
+        overflow: hidden;
+        text-align: center;
+
+    }
+
 }
 
 @media screen and (max-width: 1800px) {
