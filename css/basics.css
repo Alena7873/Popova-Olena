@@ -1192,15 +1192,14 @@
 /* massah articles */
 
 .timeline_body {
-    width: 190%;
+    width: 730px;
     height: auto;
     margin: auto;
     position: relative;
     background: #d7e2d6;
     overflow: hidden;
     text-align: center;
-    /* margin: 50% 0; */
-    padding: 0% 35%;
+
 }
 
 .bioYear {
