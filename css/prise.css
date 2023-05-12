@@ -819,7 +819,6 @@ button {
     background: #030305;
     border: 0;
     box-sizing: border-box;
-    text-align: center;
     font-weight: bold;
     font-size: 16px;
     line-height: 150%;
@@ -830,10 +829,12 @@ button {
     transition: background-color 5s;
 }
 
+
 .button:hover {
     cursor: pointer;
-    background: #575757;
+    background: #b1adad;
 }
+
 
 .mas {
     margin: 0 auto;
