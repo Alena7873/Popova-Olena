@@ -2,7 +2,7 @@ const image = document.getElementById("myImage");
 const text = document.getElementById("myText");
 
 image.addEventListener("click", () => {
-    text.textContent = "Київ Урловская 21";
+    text.textContent = "Київ Урловская 21a";
 });
 
 window.addEventListener("DOMContentLoaded", () => {
