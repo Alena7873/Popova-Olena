@@ -204,7 +204,7 @@ jQuery(function ($) {
         gotoSection(currSection);
     };
 
-    // Handle clicks.
+
     $document.on('click', '.direction', function () {
         handleAction($(this).data('direction'));
     });

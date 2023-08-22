@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 :root {
   --main-color: #0c0b0b;
   --van-color: #000887;
@@ -111,9 +113,13 @@ a {
 
 /* бегущая строка */
 .marquee {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
+  color: #025647;
+
 }
 
 .marquee span {
